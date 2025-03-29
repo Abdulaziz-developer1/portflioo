@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="all" id="all">
+        <header>
+            <div class="logo">
+                <a href="">
+                    <h2>Port<span style="color: orangered;">folio</span></h2>
+                </a>
+            </div>
+            <nav>
+                <button class="menu-button" onclick="toggleMenu()">☰</button>
+                <ul id="nav-list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+            <div class="switcher" id="switcher">
+                <div class="circle"></div>
+            </div>
+        </header>
+
+        <main id="home">
+            <div class="text">
+                <h1>Hello, I am Tohirov Abdulaziz</h1>
+                <p>I am Tohirov Abdulaziz, owner of this web-site. This web-site is created to make you can enjoy pure
+                    coding & getting info about me.</p>
+                <div class="flex">
+                    <div class="texter"></div>
+                    <button><a href="#contact">Contact</a></button>
+                </div>
+            </div>
+            <div class="img">
+                <img src="assets/img.png" alt="">
+            </div>
+        </main>
+
+        <section class="banner1" id="about">
+            <h1>About me</h1>
+            <p>I am a front-end developer that knows and can work with:</p>
+            <ul>
+                <li>HTML 5</li>
+                <li>CSS 3</li>
+                <li>JS</li>
+                <li>Web Design</li>
+                <li>Office apps(Word, Excel, PowerPoint)</li>
+            </ul>
+            <button><a href="https://github.com/Abdulaziz-developer1">Visit my github</a></button>
+        </section>
+
+        <section class="banner2" id="projects">
+            <h1>My projects</h1>
+            <p>Here are some of my projects, here I have shown you only 4 of them , but if you want to see most of
+                projects <a href="https://github.com/Abdulaziz-developer1"><b>click here</b></a> to visit my github</p>
+            <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="true"
+                space-between="30" loop="true">
+                <swiper-slide>
+                    <img src="assets/web1.png" alt="swiper img">
+                    <div class="flexer">
+                        <h2>Uzum-market</h2>
+                        <a href="https://uzum-market-lemon.vercel.app/">Visit</a>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="assets/web2.png" alt="swiper img">
+                    <div class="flexer">
+                        <h2>My projects</h2>
+                        <a href="https://my--projects.vercel.app/">Visit</a>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="assets/web3.png" alt="swiper img">
+                    <div class="flexer">
+                        <h2>Portfolio</h2>
+                        <a href="https://pixelcraft-portfolio.vercel.app/">Visit</a>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="assets/web4.png" alt="swiper img">
+                    <div class="flexer">
+                        <h2>Ecommerce</h2>
+                        <a href="https://ecommercee-web.vercel.app/">Visit</a>
+                    </div>
+                </swiper-slide>
+            </swiper-container>
+        </section>
+
+        <section class="banner3" id="blog">
+            <h1>My blog</h1>
+            <a href="https://www.instagram.com/t__abdulaz1z/" class="flex">
+                <i class='bx bxl-instagram'></i>
+                <p>Instagram</p>
+            </a>
+            <a href="https://t.me/t_abdulaz1z" class="flex">
+                <i class='bx bxl-telegram'></i>
+                <p>Telegram</p>
+            </a>
+            <a href="https://github.com/Abdulaziz-developer1" class="flex">
+                <i class='bx bxl-github'></i>
+                <p>gitHub</p>
+            </a>
+        </section>
+
+        <section class="banner4" id="contact">
+            <form action="https://formspree.io/f/mpwpjwve" method="POST">
+                <h1>Contact Us</h1>
+                <input type="email" placeholder="example@gmail.com" name="email" required><br>
+                <input type="tel" placeholder="xx xxx xxxx" name="phoneNumber" required><br>
+                <input type="text" placeholder="Your message" name="message" required><br>
+                <div class="flex">
+                    <input type="checkbox" name="contactBack">
+                    <p>Contact Back</p>
+                </div>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+
+        <footer>
+            <ul class="footer-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#blog">blog</a></li>
+            </ul>
+            <hr>
+            <div class="copyright">
+                <h2>
+                    &copy; <span id="year"></span>
+                    <a href="">Port<span style="color: orangered;">folio.</span></a> All rights reserved.
+                </h2>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
