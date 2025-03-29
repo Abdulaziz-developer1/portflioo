@@ -286,6 +286,10 @@ main{
     text-align: center;
 }
 
+.wave{  
+    animation: wave 1s linear infinite;
+}
+
 .banner1 ul li{
     animation: wave 1s linear infinite;
 }
